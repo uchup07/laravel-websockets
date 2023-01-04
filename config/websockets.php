@@ -31,6 +31,15 @@ return [
             'capacity' => null,
             'enable_client_messages' => true,
             'enable_statistics' => true,
+        ],[
+            'id' => env('PUSHER_APP_1_ID'),
+            'name' => env('PUSHER_APP_1_NAME'),
+            'key' => env('PUSHER_APP_1_KEY'),
+            'secret' => env('PUSHER_APP_1_SECRET'),
+            'path' => env('PUSHER_APP_PATH'),
+            'capacity' => null,
+            'enable_client_messages' => true,
+            'enable_statistics' => true,
         ],
     ],
 
