@@ -31,16 +31,7 @@ return [
             'capacity' => null,
             'enable_client_messages' => true,
             'enable_statistics' => true,
-        ],[
-            'id' => env('PUSHER_APP_1_ID'),
-            'name' => env('PUSHER_APP_1_NAME'),
-            'key' => env('PUSHER_APP_1_KEY'),
-            'secret' => env('PUSHER_APP_1_SECRET'),
-            'path' => env('PUSHER_APP_PATH'),
-            'capacity' => null,
-            'enable_client_messages' => true,
-            'enable_statistics' => true,
-        ],
+        ]
     ],
 
     /*
@@ -50,7 +41,8 @@ return [
      * You can create a custom provider by implementing the
      * `AppProvider` interface.
      */
-    'app_provider' => BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+    //'app_provider' => BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+    'app_provider' => \App\Providers\ConfigAppProvider::class,
 
     /*
      * This array contains the hosts of which you want to allow incoming requests.
